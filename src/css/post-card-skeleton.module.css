@@ -1,0 +1,166 @@
+.postCardSkeleton {
+  margin-bottom: var(--space-lg);
+}
+
+.postCardSkeletonHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: var(--color-primary);
+  padding: 0 var(--space-lg);
+}
+
+.postCardSkeletonTitle {
+  flex: 1;
+  height: 24px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.2) 75%
+  );
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+  margin-right: var(--space-md);
+}
+
+.postCardSkeletonActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.postCardSkeletonIcon {
+  width: 32px;
+  height: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.2) 75%
+  );
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+
+.postCardSkeletonContent {
+  padding: var(--space-lg);
+  border-radius: 0 0 16px 16px;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  background-color: #ffffff;
+}
+
+.postCardSkeletonUserInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.postCardSkeletonUsername {
+  width: 120px;
+  height: 18px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+
+.postCardSkeletonDate {
+  width: 100px;
+  height: 18px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+
+.postCardSkeletonText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.postCardSkeletonLine {
+  width: 100%;
+  height: 16px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+
+.postCardSkeletonLineShort {
+  width: 60%;
+  height: 16px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .postCardSkeletonHeader {
+    height: 60px;
+    padding: 0 var(--space-md);
+  }
+
+  .postCardSkeletonTitle {
+    height: 20px;
+    margin-right: var(--space-sm);
+  }
+
+  .postCardSkeletonIcon {
+    width: 24px;
+    height: 22px;
+  }
+
+  .postCardSkeletonActions {
+    gap: 12px;
+  }
+
+  .postCardSkeletonContent {
+    padding: var(--space-md);
+  }
+
+  .postCardSkeletonUserInfo {
+    font-size: 14px;
+    margin-bottom: var(--space-sm);
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .postCardSkeletonUsername {
+    width: 100px;
+    height: 14px;
+  }
+
+  .postCardSkeletonDate {
+    width: 80px;
+    height: 14px;
+  }
+
+  .postCardSkeletonLine {
+    height: 14px;
+  }
+
+  .postCardSkeletonLineShort {
+    height: 14px;
+  }
+}

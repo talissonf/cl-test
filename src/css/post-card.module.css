@@ -1,0 +1,146 @@
+.postCard {
+  margin-bottom: var(--space-lg);
+}
+
+.postCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 var(--space-lg);
+}
+
+.postCardHeaderTitle {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: var(--space-md);
+}
+
+.postCardHeaderAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.postCardHeaderAction svg {
+  flex-shrink: 0;
+  max-width: 32px;
+  max-height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.postCardHeaderAction:hover svg {
+  transform: scale(1.2);
+}
+
+.postCardContent {
+  position: relative;
+  padding: var(--space-lg);
+  border-radius: 0 0 16px 16px;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.postCardUserInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: var(--space-md);
+  color: var(--color-secondary);
+}
+
+.postCardContentUsernameText {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.postCardContentContent {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  word-wrap: break-word;
+  margin-bottom: var(--space-md);
+}
+
+.postCardActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid #e0e0e0;
+}
+
+.postCardActionsRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.postCardCommentsExpanded {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid #e0e0e0;
+}
+
+.postCardHeaderActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .postCardHeader {
+    height: 60px;
+    font-size: 18px;
+    padding: 0 var(--space-md);
+  }
+
+  .postCardHeaderTitle {
+    font-size: 18px;
+    margin-right: var(--space-sm);
+  }
+
+  .postCardHeaderAction svg {
+    max-width: 24px;
+    max-height: 22px;
+  }
+
+  .postCardHeaderActions {
+    gap: 12px;
+  }
+
+  .postCardContent {
+    padding: var(--space-md);
+  }
+
+  .postCardUserInfo {
+    font-size: 14px;
+    margin-bottom: var(--space-sm);
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .postCardContentUsernameText {
+    font-size: 14px;
+  }
+
+  .postCardContentContent {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}

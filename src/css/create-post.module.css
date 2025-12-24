@@ -1,0 +1,51 @@
+.createPost {
+  max-width: 752px;
+  border-radius: 16px;
+  border: 1px solid var(--color-secondary);
+  background-color: #ffffff;
+  padding: var(--space-lg);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  margin-bottom: var(--space-lg);
+}
+
+.form {
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.formControlLabel {
+  font-size: var(--space-md);
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.formControl textarea {
+  height: 74px;
+  resize: both;
+}
+
+.errorMessage {
+  color: var(--color-error);
+  font-size: 14px;
+  margin-top: 4px;
+}

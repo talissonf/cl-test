@@ -1,0 +1,50 @@
+.likesContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+  color: #000000;
+}
+
+.likeIconFilled {
+  color: var(--color-error);
+}
+
+.likesContainer:hover .likeIcon {
+  transform: scale(1.1);
+}
+
+.likesContainer:active .likeIcon {
+  transform: scale(0.95);
+}
+
+.likesCount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  min-width: 20px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .likeIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .likesCount {
+    font-size: 16px;
+  }
+
+  .likesContainer {
+    gap: 6px;
+  }
+}
