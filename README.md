@@ -120,7 +120,7 @@ VITE_FIREBASE_APP_ID=your_app_id
 
 1. In Firebase Console, go to "Authentication"
 2. Click "Get started"
-3. Enable "Email/Password" sign-in method
+3. Enable "Google" sign-in method
 4. Save the changes
 
 ## 📜 Available Scripts
