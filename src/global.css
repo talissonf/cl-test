@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-background);
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --color-primary: #7695ec;
+  --color-secondary: #777777;
+  --color-background: #dddddd;
+  --color-btn-hover: #5a7de8;
+
+  --color-error: #ff0000;
+  --color-success: #47b960;
+  --color-success-hover: #3da350;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+}
+
+.cl-input {
+  height: 32px;
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--space-sm);
+  width: 100%;
+  padding: var(--space-sm);
+  box-sizing: border-box;
+}
+
+.cl-button {
+  min-width: 111px;
+  height: 32px;
+  border-radius: var(--space-sm);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: var(--space-md);
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.cl-button:hover:not(:disabled) {
+  background-color: var(--color-btn-hover);
+}
+
+.cl-button:disabled {
+  background-color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .cl-button {
+    font-size: 12px;
+  }
+}
