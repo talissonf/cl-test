@@ -57,7 +57,7 @@ A simple social network application that performs basic CRUD operations for post
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/talissonf/cl-test
 cd CodeLeapEngineeringTest
 ```
 
